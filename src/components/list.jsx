@@ -1,7 +1,7 @@
-const FeaturesList = ({animal, option1, option2, option3}) => {
+const FeaturesDropdown = ({animal, option1, option2, option3}) => {
     return(
         <div>
-            <label for="featuresDropdown">{animal}`s Features</label>
+            <label for="featuresDropdown">{animal}'s Features</label>
                 <select id="featuresDropdown" name="features">
                 <option value={option1}>{option1}</option>
                 <option value={option2}>{option2}</option>
@@ -10,4 +10,4 @@ const FeaturesList = ({animal, option1, option2, option3}) => {
         </div>
     );
 };
-export default FeaturesList;
+export default FeaturesDropdown;

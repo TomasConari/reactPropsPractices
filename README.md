@@ -1,3 +1,5 @@
+# This are some exercises that i made while learning react, mostly training components and props
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,10 +1,12 @@
 import './App.css';
+import BestFoodList from './components/bestFood';
 import Button from './components/button';
 import AnimalImage from "./components/img";
 import LinkToSite from './components/link';
-import FeaturesList from './components/list';
+import FeaturesDropdown from './components/list';
 import Paragraph from './components/paragraph';
 import Tittle from './components/tittle';
+import CommonRaces from './components/unorderedList';
 import CatDogVideo from './components/video';
 
 const animalsImg = {
@@ -25,7 +27,7 @@ const animalVideosUrl = {
 };
 
 const App = () => {
-  
+
   const randomTrueFalse = () =>{
     const number = Math.round(Math.random());
     const response = number === 1 ? true : false;
@@ -35,12 +37,27 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Button color={ifSuccess === true? "green":"red"} text={ifSuccess === true? "success":"error"}/><br />
-      <Tittle textColor={ifSuccess === true? "yellow":"blue"} font={"Times New Roman"} tittle={ifSuccess === true? "Cat":"Dog"} />
-      <AnimalImage src={ifSuccess === true? animalsImg.cat : animalsImg.dog} width={"10%"} height={"10%"}/>
-      <Paragraph spacing={"3px"} text={ifSuccess === true? animalsDescription.cat : animalsDescription.dog} />
-      <FeaturesList 
-        animal={ifSuccess === true? "Cat" : "Dogs"} 
+      <Button 
+        color={ifSuccess === true? "green":"red"} 
+        text={ifSuccess === true? "success":"error"}
+      />
+      <br />
+      <Tittle 
+        textColor={ifSuccess === true? "orange":"blue"} 
+        font={"Times New Roman"} 
+        tittle={ifSuccess === true? "Cat":"Dog"} 
+      />
+      <AnimalImage 
+        src={ifSuccess === true? animalsImg.cat : animalsImg.dog} 
+        width={"10%"} 
+        height={"10%"}
+      />
+      <Paragraph 
+        spacing={"3px"} 
+        text={ifSuccess === true? animalsDescription.cat : animalsDescription.dog} 
+      />
+      <FeaturesDropdown 
+        animal={ifSuccess === true? "Cat" : "Dog"} 
         option1={ifSuccess === true? "Independence" : "Intelligence"} 
         option2={ifSuccess === true? "Agility" : "Loyalty"}
         option3={ifSuccess === true? "Hunting" : "Energy"}
@@ -53,6 +70,18 @@ const App = () => {
       <CatDogVideo 
         borders={ifSuccess === true? "5px solid green":"5px solid red"} 
         source={ifSuccess === true? animalVideosUrl.cat : animalVideosUrl.dog} 
+      />
+      <CommonRaces 
+        tittle={ifSuccess === true? "Cat" : "Dog"}
+        el1={ifSuccess === true? "Maine Coon" : "Labrador Retriever"}
+        el2={ifSuccess === true? "Siamese" : "German Shepherd"}
+        el3={ifSuccess === true? "Persian" : "Golden Retriever"}
+      />
+      <BestFoodList
+        tittle={ifSuccess === true? "Cat" : "Dog"}
+        el1={ifSuccess === true? "Royal Canin" : "Blue Buffalo"}
+        el2={ifSuccess === true? "Hill's Science Diet" : "Orijen"}
+        el3={ifSuccess === true? "Purina Pro Plan" : "Hill's Science Diet"}
       />
     </div>
   );
