@@ -1,6 +1,8 @@
-const Tittle = ({tittle, textColor, font}) => {
+const Tittle = ({compStyle, tittle, textColor, font}) => {
     return(
-        <h1 style={{color: textColor, fontFamily: font}}>{tittle}</h1>
+        <div style={compStyle}>
+            <h1 style={{color: textColor, fontFamily: font}}>{tittle}</h1>
+        </div>
     );
 };
 export default Tittle;

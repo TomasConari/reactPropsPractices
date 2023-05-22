@@ -1,6 +1,8 @@
-const Button = ({color, text}) => {
+const Button = ({compStyle, color, text}) => {
     return(
-        <button style={{backgroundColor: color}}>{text}</button>
+        <div style={compStyle}>
+            <button style={{backgroundColor: color}}>{text}</button>
+        </div>
     );
 };
 export default Button;

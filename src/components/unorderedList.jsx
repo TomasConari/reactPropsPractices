@@ -1,6 +1,6 @@
-const CommonRaces = ({tittle, el1, el2, el3}) => {
+const CommonRaces = ({compStyle, tittle, el1, el2, el3}) => {
     return(
-        <div>
+        <div style={compStyle}>
             <h3>{tittle}'s most common races</h3>
             <ul>
                 <li>{el1}</li>

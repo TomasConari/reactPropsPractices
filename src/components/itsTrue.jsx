@@ -1,6 +1,8 @@
-const ItsTrue = ({backColor, text}) => {
+const ItsTrue = ({compStyle, backColor, text}) => {
     return(
-        <h2 style={{backgroundColor: backColor}}>{text}</h2>
+        <div style={compStyle}>
+            <h2 style={{backgroundColor: backColor}}>{text}</h2>
+        </div>
     );
 };
 export default ItsTrue;

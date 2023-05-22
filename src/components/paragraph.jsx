@@ -1,6 +1,8 @@
-const Paragraph = ({text, spacing}) => {
+const Paragraph = ({compStyle, text, spacing}) => {
     return(
-        <p style={{letterSpacing: spacing}}>{text}</p> 
-    )
+        <div style={compStyle}>
+            <p style={{letterSpacing: spacing}}>{text}</p>
+        </div> 
+    );
 };
 export default Paragraph;

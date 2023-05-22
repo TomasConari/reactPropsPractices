@@ -1,6 +1,8 @@
-const AnimalImage = ({width, height, src}) =>{
+const AnimalImage = ({compStyle, width, height, src}) =>{
     return(
-        <img src={src} width={width} height={height}/>
+        <div style={compStyle}>
+            <img src={src} width={width} height={height}/>
+        </div>
     );
 };
 export default AnimalImage

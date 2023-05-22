@@ -1,14 +1,18 @@
 export const allFatherStyle = {
     fontFamily: "'Open Sans', sans-serif",
     color: "#212529",
-    display: "fcolumn",
+    display: "flex",
+    flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-between"
+    justifyContent: "center"
 };
 export const componentStyle = {
-    fontSize: "16px",
-    color: "#333",
-    padding: "10px",
-    border: "1px solid #ccc",
-    borderRadius: "5px"
+    display: "flex",
+    height: "100%",
+    width: "50%",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#fef8f5;",
+    boxShadow: "0px 2px 15px rgba(0, 0, 0, 0.3)",
+    borderRadius: "3px"
 };
