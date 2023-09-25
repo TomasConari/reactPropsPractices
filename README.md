@@ -6,6 +6,7 @@ How to see it?
 
     1. Download/clone the repository.
     2. Open the terminal and navigate to the repository location.
+    3. Run "npm install" in your terminal.
     3. Run "npm start" in your terminal.
 
 My Links:
