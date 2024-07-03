@@ -1,4 +1,4 @@
-# ReactPropsPractices
+# React Props Practices
 
 This are some exercises that I made while learning react, mostly training components and props.
 
